@@ -104,7 +104,7 @@ public class ToyRobot {
 
     private void report() {
         System.out
-                .println("Toy robot is on position(" + getPositionX() + "," + getPositionY() + "," + getFacing() + ")");
+                .println("Toy robot is on position " + getPositionX() + "," + getPositionY() + "," + getFacing() + ".");
     }
 
     public int getPositionX() {
@@ -120,11 +120,17 @@ public class ToyRobot {
     }
 
     private void incrementPositionX() {
-        this.positionX++;
+        if (getPositionX() < 4)
+            this.positionX++;
+        else
+            System.out.println("WARNING! Toy robot decided to ignore command.");
     }
 
     private void decrementPositionX() {
-        this.positionX--;
+        if (getPositionX() > 1)
+            this.positionX--;
+        else
+            System.out.println("WARNING! Toy robot decided to ignore command.");
     }
 
     public int getPositionY() {
@@ -140,11 +146,17 @@ public class ToyRobot {
     }
 
     private void incrementPositionY() {
-        this.positionY++;
+        if (getPositionY() < 4)
+            this.positionY++;
+        else
+            System.out.println("WARNING! Toy robot decided to ignore command.");
     }
 
     private void decrementPositionY() {
-        this.positionY--;
+        if (getPositionX() > 1)
+            this.positionY--;
+        else
+            System.out.println("WARNING! Toy robot decided to ignore command.");
     }
 
     public Direction getFacing() {
