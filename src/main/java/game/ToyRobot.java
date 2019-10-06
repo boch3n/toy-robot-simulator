@@ -127,7 +127,7 @@ public class ToyRobot {
     }
 
     private void decrementPositionX() {
-        if (getPositionX() > 1)
+        if (getPositionX() > 0)
             this.positionX--;
         else
             System.out.println("WARNING! Toy robot decided to ignore command.");
@@ -153,7 +153,7 @@ public class ToyRobot {
     }
 
     private void decrementPositionY() {
-        if (getPositionX() > 1)
+        if (getPositionX() > 0)
             this.positionY--;
         else
             System.out.println("WARNING! Toy robot decided to ignore command.");

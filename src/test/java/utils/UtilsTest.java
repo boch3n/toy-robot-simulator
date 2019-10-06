@@ -42,4 +42,16 @@ public class UtilsTest {
         //then
         assertTrue(result);
     }
+
+    @Test
+    public void verifyPlaceCommand_shouldSucceed(){
+        //given
+        String command = "PLACE 2,3,SOUTH";
+
+        //when
+        boolean result = Utils.verifyPlaceCommand(command);
+
+        //then
+        assertFalse(result);
+    }
 }
