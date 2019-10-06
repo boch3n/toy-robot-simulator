@@ -107,7 +107,7 @@ public class ToyRobot {
                 .println("Toy robot is on position(" + getPositionX() + "," + getPositionY() + "," + getFacing() + ")");
     }
 
-    private int getPositionX() {
+    public int getPositionX() {
         return positionX;
     }
 
@@ -127,7 +127,7 @@ public class ToyRobot {
         this.positionX--;
     }
 
-    private int getPositionY() {
+    public int getPositionY() {
         return positionY;
     }
 
@@ -147,7 +147,7 @@ public class ToyRobot {
         this.positionY--;
     }
 
-    private Direction getFacing() {
+    public Direction getFacing() {
         return facing;
     }
 
