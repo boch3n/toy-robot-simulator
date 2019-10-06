@@ -45,9 +45,9 @@ public class ToyRobot {
     }
 
     private String getFacing(String userInput) {
-        if (userInput.startsWith("N") || userInput.startsWith("S"))
+        if (userInput.charAt(10) == 'N' || userInput.charAt(10) == 'S') {
             return userInput.substring(10, 15);
-        else
+        } else
             return userInput.substring(10, 14);
     }
 
